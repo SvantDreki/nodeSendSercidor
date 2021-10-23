@@ -11,7 +11,8 @@ conectarBD();
 //Opciones de cors
 const opciones = {
     origin: process.env.FRONTEND_URL,
-    Credential: true
+    credentials:true,            //access-control-allow-credentials:true
+    optionSuccessStatus:200
 }
 //Habilitar cors
 app.use( cors(opciones) );
