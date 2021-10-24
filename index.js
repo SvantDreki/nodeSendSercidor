@@ -13,8 +13,7 @@ conectarBD();
     origin: process.env.FRONTEND_URL
 }*/
 //Habilitar cors
-app.use( cors({origin: process.env.FRONTEND_URL}) );
-app.options( '*', cors() );
+app.use( cors() );
 
 //Puerto de la app
 const port = process.env.PORT || 4000;
