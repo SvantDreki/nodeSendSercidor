@@ -15,7 +15,7 @@ const opciones = {
 }
 //Habilitar cors
 app.use( cors({ 
-    origin: 'https://blissful-hopper-3134e9.netlify.app', 
+    origin: {source: 'https://blissful-hopper-3134e9.netlify.app'}, 
     optionsSuccessStatus: 200,
     allowedHeaders: 'https://blissful-hopper-3134e9.netlify.app',
     credentials: true
