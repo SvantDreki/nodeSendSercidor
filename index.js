@@ -14,7 +14,7 @@ const opciones = {
     optionsSuccessStatus: 200
 }
 //Habilitar cors
-app.use( cors(opciones) );
+app.use( cors({ origin: 'https://blissful-hopper-3134e9.netlify.app', optionsSuccessStatus: 200 }) );
 
 //Puerto de la app
 const port = process.env.PORT || 4000;
