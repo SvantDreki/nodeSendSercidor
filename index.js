@@ -9,11 +9,11 @@ const app = express();
 conectarBD();
 
 //Opciones de cors
-const opciones = {
+/*const opciones = {
     origin: process.env.FRONTEND_URL
-}
+}*/
 //Habilitar cors
-app.use( cors(opciones,{ credentials: true, origin: true }) );
+app.use( cors({ credentials: true, origin: true }) );
 app.options( '*', cors() );
 
 //Puerto de la app
